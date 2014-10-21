@@ -1,9 +1,8 @@
 READ a
 READ b
-LOADI r1 #3
+LOADI r1 #1
 LOAD r2 a
-LOAD r3 b
-MUL r4 r2 r3
+MUL r4 r1 r2
 ADD r5 r1 r4
 STORE c r5
 LOAD r6 c
