@@ -211,7 +211,7 @@ static void swap()
 	}
 	int right_reg = next_register();
 	char right_id = token;
-	CodeGen(LOAD, left_reg, left_id, EMPTY_FIELD);
+	CodeGen(LOAD, right_reg, right_id, EMPTY_FIELD);
 
 	CodeGen(STORE, left_id, right_reg, EMPTY_FIELD);
 	CodeGen(STORE, right_id, left_reg, EMPTY_FIELD);
